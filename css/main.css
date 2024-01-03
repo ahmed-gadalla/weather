@@ -1,0 +1,148 @@
+:root {
+  --animation-duration: 400ms;
+}
+
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* start nav */
+/* .navbar {
+  background-color: #000000a2;
+} */
+
+.navbar  {
+  background-color: #718794d3 !important;
+  color: #000000 !important;
+  padding: 3px;
+}
+
+.navbar .navlogo {
+  font-size: 20px !important;
+}
+
+.navbar .nav-item a {
+  font-size: 15px;
+  position: relative;
+  padding: 0%;
+  margin: 0%;
+}
+
+.navbar .nav-item a::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  bottom: -2px;
+  width: 0%;
+  height: 1.5px;
+  background-color: #fff;
+  transition: width var(--animation-duration);
+}
+
+.navbar .nav-item a:hover::before {
+  width: 100%;
+}
+
+body:not(:has(:target)) .home-link::before,
+body:has(.home:target) .home-link::before,
+body:has(.about:target) .about-link::before,
+body:has(.services:target) .services-link::before,
+body:has(.work:target) .work-link::before,
+body:has(.clients:target) .clients-link::before,
+body:has(.team:target) .team-link::before,
+body:has(.contact:target) .contact-link::before {
+  width: 100%;
+}
+
+/* end nav */
+#home {
+  background-image: url(../imgs/111.jpg) ;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+
+
+
+
+/* ****start home  */
+input {
+  background-color:#a4b3bb !important ;
+  color: #000000 !important;
+  height: 50px;
+
+}
+
+input::placeholder {
+  font-size: large !important;
+  color: rgb(97, 97, 97) !important;
+  opacity: 1; /* Firefox */
+}
+
+input::-ms-input-placeholder { /* Edge 12 -18 */
+  color: rgb(114, 114, 114) !important;
+  
+}
+
+
+/* main card */
+
+.country h1 {
+  font-size: 60px;
+}
+
+.country p {
+  font-size: 20px;
+}
+.degree h2 {
+  font-size: 90px;
+}
+.degree span {
+  font-size: 40px;
+}
+.more-info p {
+  font-size: 22px;
+  margin: 0%;
+}
+
+.main-info{
+  background: -webkit-linear-gradient(#566e7bc0, #c1d3e1bc);
+
+}
+.inner-info{
+  width: 20%;
+  background: -webkit-linear-gradient(#4f6570f5, #636d74e5);
+color: rgba(255, 255, 255, 0.829);
+}
+
+.searchBar .btnsearch {
+  background-color: #718794;
+width: 10%;
+position: absolute;
+top: 4px;
+right: 13.25%;
+transition: all var(--animation-duration);
+border: none;
+
+}
+
+.searchBar .btnsearch:hover{
+background-color: #566c79;
+color: #cfcfcf;
+}
+
+.smallCard{
+  width: 49% !important;
+}
+
+

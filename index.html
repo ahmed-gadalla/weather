@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="30" /> -->
+    <link rel="icon" href="imgs/logo@2x.png" />
+    <title>Weather</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--body font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--  -->
+
+    <!-- bootstrap link  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- css link -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- media link -->
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+
+  <body>
+    <!-- **********start nav  -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top   p-4 pb-2"
+    >
+      <div class="container">
+        <a class="navlogo navbar-brand  fw-bold w-25" href="#index.html"
+          ><img src="imgs/logo@2x.png" alt="" class="w-25"></a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+            <li class="nav-item">
+              <a class="nav-link  home-link" href="#home">HOME</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link  about-link" href="#about">News</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link  services-link" href="#services"
+                >Livecameras</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link  work-link" href="#work">Photos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link  clients-link" href="#clients"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- *********** start home  -->
+<section id="home" class="py-5">
+  
+    <div class=" container " >
+      
+      <div class="row  mt-2 g-3 justify-content-between" >
+
+        <div class="searchBar col-12 mt-5 d-flex justify-content-evenly align-items-center position-relative"   >
+          <input type="text"  class="form-control  w-75 rounded-pill " placeholder="Search By Location" id="searchBar" "/>
+          <button class=" btnsearch btn  btn-outline-dark     m-auto   fs-5  rounded-pill" id="btn" onclick="search ()">
+            Search
+          </button>
+  
+        </div>
+        
+        <div class="main-info col-12  p-5 rounded-5 " id="Current">
+
+          
+        
+        
+        </div>
+
+        
+      </div>
+
+      <div class="row  mt-2 g-3 justify-content-between" id="forecast">
+
+        
+
+
+      </div>
+</section>
+
+    <script src="jv/bootstrap.bundle.min.js"></script>
+    <script src="jv/index.js"></script>
+  </body>
+</html>
